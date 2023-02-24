@@ -5,17 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style> /*ejm de selectores combinados*/
-        div p { /* este ejm es de selectores combinados descendientes*/
+    <style> /*ejm de selectores combinados. Un selector combinador es la unión de dos o más selectores básicos.        */
+        /*selectores combinados
+        --> descendientes: --> div p
+        --> hijo directo: --> div > p
+        --> elemento adyacente: --> div + p
+        --> general de hermanos: --> div ~ p
+        -->*/
+        div p { /* descendientes
+            Selecciona todos los elementos del selector de la derecha que son hijos del selector de la izquierda, independientemente de la profundidad. Estos selectores están separados por un espacio.*/
             color: lime;
+        }
+
+        div > div { /*combinador de hijo directo
+            Selecciona todos los elementos del selector de la derecha que son hijos directos del selector de la izquierda. Estos selectores están separados por >.*/
+            background: plum;
+        }
+        
+        .es {
+            background: red;
+        }
+        
+        div + section { /*combinador de elemento adyacente
+            Selecciona todos los elementos del selector de la derecha que están adyacente al selector de la izquierda. Estos selectores están separados por +.*/
+            background: palevioletred;
+        }
+        
+        div ~ p { /*combinador general de hermanos
+            Selecciona todos los elementos del selector de la derecha que son hermanos del selector de la izquierda. Estos selectores están separados por ~.*/
+            color: powderblue;
         }
     </style>
 </head>
 <body>
     <div>
-        <p>Platzi</p>
-        <p>Es</p>
-        <p>Increible</p>
+        <div>
+            <p>Platzi</p>
+            <div class="es">Es</div>
+        </div>
     </div>
+    <p>Clase de selectores</p>
+    <p>Clase de selectores</p>
+    <section>
+        Es lo mejor
+    </section>
+    <div>
+        Master
+    </div>
+    
 </body>
 </html>
