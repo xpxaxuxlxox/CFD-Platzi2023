@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*hay selectores basicos
+        -->universal --> *{}
+        -> de tipo -->  div {}
+        -> de clase --> .elemeto {}
+        -> de id --> #nombre-del-id
+        --> de atributo --> a[href = "link"] {}
+        */
+        * { /*seletor universal 
+            Selecciona todos los elementos del documento mediante un asterisco *. */
+            background: papayawhip;
+        }
+
+        div { /*selector de tipo. 
+            Selecciona todos los elementos que coincidan con el nombre de la etiqueta HTML.*/
+            background: pink;
+        }
+        
+        .titulo { /*selector de clase
+            Selecciona todos los elementos que coincidan con las etiquetas HTML que contengan el atributo class. Para seleccionar estos elementos, se empieza por un punto . y seguido el valor exacto del atributo class de la etiqueta. Puede ser cualquier valor que desees colocar.*/
+            color: blueviolet;
+        }
+        
+        #titulo2 { /*selecctor de identificador unico
+            Selecciona el único elemento que coincida con la etiqueta HTML que contenga el atributo id. Solo puede existir un valor id para todo el documento.Para seleccionar el elemento, se empieza por el símbolo de hashtag # y seguido el valor exacto del atributo id de la etiqueta. Puede ser cualquier valor que desees colocar.*/
+            color: brown;
+        }
+        
+        a[href = "https://platzi.com/home"] { /*selector de atributo
+            Selecciona los elementos que coincidan con la etiqueta HTML que contenga el atributo y valor especificado. Para seleccionar los elementos, se empieza por el nombre de la etiqueta, seguido de corchetes [] que contiene el atributo y valor especificado.*/
+            color: blue;
+        }
+    </style><!--en esta etiqueta style, se pondran los estilos-->
+</head>
+<body>
+    <div class="titulo">Hola</div>
+    <div id="titulo2">mundo</div>
+    <a href="https://platzi.com/home"> Go to Platzi</a>
+</body>
+</html>
