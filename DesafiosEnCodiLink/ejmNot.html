@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-size: 3rem;
+        }
+        div:not(.negro){
+            color: blue;
+            /*Representa el estado en el cual no coinciden los selectores que se indiquen.
+            esta pseudoclase lo que hace es no acatar lo que se le manda
+            En la linea 25, el atributo clase, hace referencia al valor negro. en el not, linea 12, este valor negro que se hace referencia con .negro NO ACATA el color azul y se queda en negro*/
+        }
+    </style>
+</head>
+<body>
+    <!--ejm pseudoclase not
+    pseudoclase: Una pseudoclase define el estilo de un estado especial de un elemento.-->
+    <div>Azul</div>
+    <div>Azul</div>
+    <div class="negro">Negro</div>
+    <div>Azul</div>
+    <div>Azul</div>
+</body>
+</html>
