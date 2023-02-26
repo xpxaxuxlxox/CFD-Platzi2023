@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*pseudoclases y pseudoelementos
+        pseudoclases, Una pseudoclase define el estilo de un estado especial de un elemento.
+            --> :active :focus :hover :nth-child()
+        pseudoelementos, Un pseudoelemento define el estilo de una parte específica de un elemento.
+            --> ::after ::before ::first-letter ::placeholder
+        */
+        p { /*el valaor salmon tendrá todos nuestros p por defecto*/
+            color: salmon;
+        }
+        p::first-letter { /*seudoelemento, con first-letter estilizamos la primera letra*/
+            color: teal;
+        }
+        p::before { /*seudoelemto que pone delante del texto emoji*/
+            content: "👾";
+        }
+        p::after { /*seudoelemento que pone detras del texto algo*/
+            content: "😀";
+        }
+        p:hover { /*seudocclase, hover loq ue hace es un cambio cuando pasamos el mouse por encima, en este caso cuando pasemos el mouse por encima cambiara a skyblue*/
+            color: skyblue;
+        }
+        div p:nth-child(2) { /*En este caso el p que este dentro del p se pone la seudoclase que es nth-child numero 2. osea sea aplicara al hijo numero 2*/
+            color: violet;
+        }
+        ::placeholder{ /*seudoelemento que cambia de color el input*/
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <p>Hola</p>
+    <div>
+        <p>Platzi</p>
+        <p>Master</p>
+        <p>Lo mejor</p>
+    </div>
+    <input type="text" placeholder="name">
+    <!--Con este input, en la parte de placeholder es el texto de fondo que se pone en la cajita-->
+</body>
+</html>
