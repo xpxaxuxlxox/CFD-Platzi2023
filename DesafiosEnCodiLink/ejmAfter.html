@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            cursor: pointer;
+        }
+        nav ul li::after{
+            content: "|";
+            margin: 1rem;
+            color: red;
+        }
+        /* Sirve para agregar un contenido después del elemento. El contenido es agregado mediante la propiedad content de CSS.
+        para invocar este after se va herendado, 1ro ponemos nav, despues ul y despues li. el afeter afecto al li.
+        lo que hace es poner un valor desdepues de cada li.
+        */ 
+    </style>
+</head>
+<body>
+    <!--ejm pseudoelemento after
+    Un pseudoelemento define el estilo de una parte específica de un elemento.
+    -->
+    <!-- Navbar improvisada -->
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Destacados</li>
+            <li>Elementos</li>
+            <li>Clases</li>
+            <li>Mas ... </li>
+        </ul>
+    </nav>
+</body>
+</html>
