@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;/*aplicando margen 0 aal body, ssacamos todo el margen que tiene*/
+        }
+        div{ /*todo esto se aplica al div que es un elemento en bloque*/
+            background: salmon; /*el background se aplica desde principio como de final, es de bloque pq se dessplazal rededor de toda la pantalla  */
+            width: 200px;/*aplicamos un ancho de 200px*/
+            height: 200px;/*aplicamos un alto de 200px*/
+            margin: 20px;/*aplicamos un margen de 20px, loq eu significa que del limite de la pantalla se corre 20px para todos los lados como si fuera una caja*/
+        }
+        a{ /*aplicando estas cosas demuestra que a es un elemento en linea*/
+            background: skyblue;
+            width: 200px;/*no se puede aplicar un ancho porque es un elemento en linea*/
+            height: 200px;/*no se puede aplicar un alto porque es un elemento en linea y no aplica*/
+            margin: 20px;/*margin si aplica */
+        }
+        button{/*el button es un elemento que es inline-block, se parece al elemento bloque pero ademas es inline*/
+        background: slateblue; /*aplicando color al button*/
+        width: 200px;/*si aplica el ancho para el button*/
+        height: 200px;/*si aplica el alto para el button*/
+        }
+    </style>
+</head>
+<body>
+    <!---->
+
+    <div>bloque</div> <!--el div es de tipo bloque. ES UN BLOQUE-->
+    <a href="/">inline</a><!-- la a es un elmento en linea. ES UNA LINEA-->
+    <button>inline block</button><!--el button es un elemento que es inline block-->
+</body>
+</html>
