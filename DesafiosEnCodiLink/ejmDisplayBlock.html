@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Quita los comentarios y observa el comportamiento*/
+        div{
+            background-color: aqua; 
+            /*margin: 10px;*/ /*quita de este*/
+            /*padding: 10px;*/ /*quita de este*/
+        }
+        .con_medidas{
+            /*width: 200px;*/ /*quita de este*/
+            /*height: 200px;*/ /*quita de este*/
+        }
+        /*Ignora estos estilos, por ahora*/
+        *{
+            font-size: 1.2rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>Soy display block</div> <!--es un div normal, que sus estilos se aplican a esstilos div-->
+    <div>Soy display block</div>
+    <div class="con_medidas">Soy display block</div> <!--es un div que tiene el atributo de valor con_medidas, que asi como se aplica el css de div tmb aplicara el div con_medidas-->
+</body>
+</html>
