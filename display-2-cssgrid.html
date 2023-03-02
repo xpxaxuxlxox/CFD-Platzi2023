@@ -7,16 +7,17 @@
     <title>Document</title>
     <style>
         .container{
-            display: grid;
+            display: grid; /*cuando se ppone display se puede elegir entre flex o grid. es como ffundamental si se quiere usar esto*/
             width: 400px;
             height: 400px;
             background: papayawhip;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr; /*se parte en porciones pero por parte de las columnas 1fr es una unidad de medida*/
+            grid-template-rows: 1fr 1fr 1fr 1fr; /*sse parte en porciones desde la parte de filas*/
         }
         .item{
             background: pink;
         }
+        /*lo que se hace acontinuacion es formar una diagonal con los elementos*/
         .container .item:nth-child(1){
             grid-column: 1 / 2;
         }
