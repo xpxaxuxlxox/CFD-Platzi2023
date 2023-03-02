@@ -9,23 +9,25 @@
         .container{
             display: flex; /*el display flex solo se coloca en los contenedores, en los items no.*/
             background: papayawhip;
-            justify-content: center;
-            align-items: center;
+            justify-content: center; /*justify-content: space-between;*/ /*esto es para que haya una separacion entre los elementos hijos, separacion proporcionada*/
+            align-items: center; /*para centrar en el eje vertical*/
             height: 200px;
-            flex-direction: column;
+            flex-direction: column; /*lo pone en columna*/
         }
         .item{
             width: 30px;
             height: 30px;
             background: purple;
         }
-        .container .item:nth-child(2n+1){
+        .container .item:nth-child(2n+1){ /*todo esto para referirme a los elementos */
             background: cyan;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <!--en flexbox podemos tener tanto contenedores como elementos hijos.
+    lo que me p[ermite flexbox es ubicar elemetos-->
+    <div class="container"><!--Este vid contenedor tiene div hijos item-->
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
