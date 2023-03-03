@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+        }
+        /*quita los comentarioss y observa el comportamiento*/
+        .container div{
+            width: 100px;
+            height: 100px;
+            /*se pueden obviar estos */
+            /*
+            top: 10px;
+            bottom: 15px;
+            left: 20px;
+            right: 10px;*/
+        }
+        .container div:nth-child(2n){
+            background-color: aqua;
+        }
+        .container div:nth-child(2n+1){
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
