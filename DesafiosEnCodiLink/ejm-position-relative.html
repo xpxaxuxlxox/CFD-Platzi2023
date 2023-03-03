@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+        }
+        .container div{
+            width: 100px;
+            height: 100px;
+        }
+        /*Quita los comentarios y observa el comportamiento*/
+        .container .relative{
+            /*puedes quitar estos estilos para ver la diferencia*/
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        .container div:nth-child(2n){
+            background-color: aqua;
+        }
+        .container div:nth-child(2n+1){
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="relative"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
