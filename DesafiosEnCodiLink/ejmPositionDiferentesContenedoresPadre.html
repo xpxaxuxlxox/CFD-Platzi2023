@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*El ejercicio esta hasta abajo*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        html{
+            margin: 20px;
+            border: 1px red solid;
+        }
+        body{
+            margin: 20px;
+            background-color: wheat;
+            border: 1px black solid;
+        }
+        p{
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+        .abuelo{
+            width: 100%;
+            height: 100vh;
+            background-color: yellowgreen;
+        }
+        .padre{
+            width: 75%;
+            height: 75%;
+            background-color: cadetblue;
+        }
+        .hijo{
+            width: 150px;
+            height: 150px;
+            background-color: rosybrown;
+        }
+        /*Lo unico que quiero que entiendas es que hay 3 contenedores, los cuales
+        Quita los comentarios y observa el comportamiento*/
+        .hijo{
+            position: absolute; /*obviar este estilo*/
+            top: 0;/*obviar este estilo*/
+        }
+        /*Por que sucedió esto?*/
+        html{
+            position: relative; /*obviaar este estilo*/
+        }
+        body{
+            position: relative;/*obviar este estilo*/
+        }
+        .abuelo{
+            position: relative;/*obviar este estilo*/
+        }
+        .padre{
+            position: relative;/*obviar este estilo*/
+        }
+        /*Ahora entendiste?*/
+    </style>
+</head>
+<body>
+    <p>Body</p>
+    <div class="abuelo">
+        <p>Abuelo</p>
+        <div class="padre">
+            <p>Padre</p>
+            <div class="hijo">
+                <p>Hijo</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
