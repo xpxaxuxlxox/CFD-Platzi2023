@@ -6,10 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
+        .nivel1{
+            /*Puedes cambiar este valor*/
+            font-size: 20px;
+        }
+        .nivel2{
+            /*tamano = 16px *1 = 16px*/
+            font-size: 1rem;
+        }
+        .nivel3{
+            /*tamano = 16px *2 = 32px*/
+            font-size: 2rem;
+        }
+        .nivel4{
+            /*tamano = 16px * 2 = 32px*/
+            font-size: 4rem;
+        }
     </style>
 </head>
 <body>
-    <div></div>
+    <div class="nivel1">
+        <p>Letra de 20px</p>
+        <div class="nivel2">
+            <p>Letra de 16px</p>
+            <div class="nivel3">
+                <p>Letra de 32px</p>
+                <div class="nivel4">
+                    <p>Letra de 32px</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
